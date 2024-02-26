@@ -402,6 +402,12 @@
       </g>
     </svg>
 
+    <button *ngIf="showInstallButton()" (click)="installPWA()">
+      Install PWA
+    </button>
+
+    <br />
+
     <span>{{ title }} app is running!</span>
 
     <svg
