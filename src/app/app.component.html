@@ -359,6 +359,11 @@
 </div>
 
 <div class="content" role="main">
+  <button *ngIf="showInstallButton()" (click)="installPWA()">
+    Install PWA
+  </button>
+  <br />
+
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
     <svg
@@ -401,12 +406,6 @@
         </g>
       </g>
     </svg>
-
-    <button *ngIf="showInstallButton()" (click)="installPWA()">
-      Install PWA
-    </button>
-
-    <br />
 
     <span>{{ title }} app is running!</span>
 
